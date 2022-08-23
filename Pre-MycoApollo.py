@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 """
-This is the database, extracting the information that we need from the genbank files.
-This is to be run only once. Once the csv file is obtained, we do not need to run this further.
+You only need to run this code if you wish to change the genomes that are currently being used for MycoApollo.
 """
 
 from Bio import SeqIO
@@ -13,7 +12,7 @@ import pandas as pd
 import operator
 
 #We open the file the genbank file tuberculosis
-gb_file_h37ra = "../dissertation/cgi-mycoapollo/db/genomes/H37RA.gbk"
+gb_file_h37ra = "../cgi-mycoapollo/db/genomes/H37RA.gbk"
 sequence_h37ra = SeqIO.read(gb_file_h37ra, "gb")
 
 def genes_extractor(path_file):
@@ -86,4 +85,4 @@ h37ra_data = pd.DataFrame(list(zip(start, end, difference, strand, locus_name, g
                               columns = ['Start position', 'End position', 'Size gen',
                                          'Strand Location', 'Locus', 'Gen name', 'Sequences']))
 
-h37ra.to_csv('../dissertation/cgi-mycoapollo/db/genomes/H37RA_data.csv')
+h37ra.to_csv('../genomes/H37RA_data1.csv')
