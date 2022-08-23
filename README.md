@@ -23,7 +23,7 @@ MycoApollo (Mycobacterium + Apollo, Greek God of healing, diseases, and knowledg
 - MycoApollo.ipynb = It contains the script for MycoApollo. The format is in JupyterNotebook to facilitate its use.
 - Pre-MycoApollo.py = It contains the script to create the CSV files. You only need this script if you wish to change the genomes used for MycoApollo.
 
-##What you need to do to run MycoApollo
+## What you need to do to run MycoApollo
 
 1.Download all the content to your computer.
 
@@ -31,7 +31,7 @@ MycoApollo (Mycobacterium + Apollo, Greek God of healing, diseases, and knowledg
 
 3.This code is intended to work for JupyterNotebook. You can make any necessary changes if you wish to run it elsewhere. However, you must change all the paths where you have the code, and the content saved. For example, path_to_bovis = "/Users/dissertation/Documents/Dissertation-real/cgi-mycoapollo/db/genomes/Bovis_data1.csv", you need to adapt this so that it works on your laptop.
 
-##Change the selected genomes.
+## Change the selected genomes.
 1. Download the GenBank files and FASTA files for the genomes.
 2. Run the GenBank files using Mauve. 
 3. Edit the alignment orthologs information to much 'locus_alignment_info.csv.'
